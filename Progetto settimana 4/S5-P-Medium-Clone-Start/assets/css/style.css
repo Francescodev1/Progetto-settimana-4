@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+    font-family: 'Roboto', sans-serif;
+
+    font-family:'Spectral', serif;
+    
+}
+
+header{
+    background-color:#ffc017 ;
+}
+
+#logo svg{
+    width: 70%;
+}
+
+nav{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    background-color: #ffc017;
+    z-index: 9;
+
+}
+
+
+.tasti{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.tasto:last-child{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #191919;
+    
+}
+
+
+
+.container{
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-top: 5%;
+
+}
+
+
+h1{
+    font-size: 90px;
+}
+
+
+.container1 p{
+    
+    font-size: 25px;
+}
+.container1 a{
+    width: 25%;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #191919;
+    text-align: center;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+
+
+/*SECTION */
+
+
+section{
+    margin-left: 10% ;
+    margin-right: 10%;
+    
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+    
+
+}
+
+.trending{
+    margin-left: 10%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.number{
+    color: gray;
+    font-size: 30px;
+}
+
+.first h4{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.element{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.first{
+    display: flex;
+    
+    gap: 14px;
+    align-items: flex-start;
+    flex-basis: 30%;
+
+}
+.firstrow{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    padding-top: 5px ;
+}
+
+.firstrow img{
+    
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 100%;
+    
+}
+
+.first p{
+    color: gray;
+    font-size: 12px;
+}
+
+.firstrow p{
+    font-weight: bold;
+    color: #191919;
+}
+
+hr{
+    margin-top: 5%;
+}
+
+
+/*ULTIMA PARTE*/
+
+.last{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.lastSx{
+    display: flex;
+    margin-left: 15%;
+    gap: 50px;
+    width: 120%;
+
+}
+
+.sx{
+width: 40%;
+height: 40%;
+gap: 1px;
+
+}
+
+.sx img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 100%;
+
+}
+.sx h4{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.primaRiga{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.secondaRiga p{
+color: gray;
+font-size: 15px;
+}
+
+.secondaRiga p:last-child{
+    color:gray;
+    font-size: 15px;
+}
+
+.foto img{
+    width: 40%;
+    height: auto;
+
+}
+
+.lastContainer{
+    display: flex;
+    margin-top: 5%;
+    gap: 80px;
+    
+    
+}
+
+.lastDx{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.bottoni{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.bottoni p{
+    border:1px solid #c9c5c5;
+    border-radius: 5px;
+    padding: 10px; 
+    text-align: center;
+    flex-basis: 25%;
+    cursor: pointer;
+}
+.bottoni p:hover{
+    background-color: rgb(12, 126, 241);
+    color: #fff;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5%;
+    
+}
+
+.footer p{
+    width: 14%;
+    cursor: pointer;
+}
+
+.footer p:hover{
+    color: red;
+    scale: 1.1;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .tasto:nth-child(-n+3):not(:last-child) {
+      display: none;}
+
+    nav{
+        position: static;
+        margin-bottom: 30px;
+        display: flex;
+    
+    
+        
+    }
+
+.container a{
+    margin-bottom: 20%;
+}
+
+   .container svg{
+    display: none;
+   }
+    
+   section{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .lastContainer{
+    display: flex;
+    
+    flex-direction: column-reverse;
+    
+    
+   }
+
+   .last{
+    margin: -40px;
+    
+   }
+
+   .lastDx{
+    margin: 30px;
+    margin-bottom: -70px;
+   }
+
+  }
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    
+
+    
+}
